@@ -1,3 +1,13 @@
+# 6 - HTTP
+
+We're going to skip a few steps and show a bit of HTTP servers.
+We're going to go back on the normal trail of Golang learning later.
+
+
+## HTTP hello world
+
+```go
+# hello_world_http.go
 package main
 
 import (
@@ -26,3 +36,4 @@ func main() {
 	fmt.Println("STARTING THE SERVER")
 	http.ListenAndServe(":8080", mux)
 }
+```

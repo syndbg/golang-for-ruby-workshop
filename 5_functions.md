@@ -36,7 +36,11 @@ func main() {
 ```go
 package main
 
-func say(messages... []string) {
+import (
+	"fmt"
+)
+
+func say(messages ...string) {
 	fmt.Println(messages)
 }
 
@@ -46,3 +50,24 @@ func main() {
 ```
 
 ## How to return from functions
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func say(messages ...string) []string {
+	return messages
+}
+
+func main() {
+	fmt.Println(say("Hello", "World"))
+}
+```
+
+## How to use keyword parameters
+
+YOU CAN'T. Yeah, it's a loss in Golang.
+We're going to cover later how you can workaround that.
