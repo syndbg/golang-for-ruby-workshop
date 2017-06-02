@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  go:
+    restart: always
+    build:
+      context: .
+    volumes:
+      - ./:/gocode/
