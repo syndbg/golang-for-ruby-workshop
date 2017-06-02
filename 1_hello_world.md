@@ -12,7 +12,6 @@ brew install go
 ```
 
 Ubuntu - check out https://github.com/golang/go/wiki/Ubuntu
-```
 
 ## Hello world
 
